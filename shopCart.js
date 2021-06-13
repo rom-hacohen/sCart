@@ -232,7 +232,7 @@ for (let i = 0; i <myProducts.length; i++){
           <img src="${myProducts[i].IMG}" style="width:100%">
           <p style="text-align: center;">${myProducts[i].AlbumNAME}</p>
           <b id = totalNum>$${myProducts[i].PRICE*myProducts[i].Amount}</b>
-          <input  readonly type="text" value="${myProducts[i].Amount}" id="AmountProduct${i}" class = "w3-right Amount" name="quantity" min="1" max="5"><br></br>
+          <input  type="text" value="${myProducts[i].Amount}" id="AmountProduct${i}" class = "w3-right Amount" name="quantity" min="1" max="5" disabled ><br></br>
           <div class="d-grid gap-2">
           <button onclick="removeFromCart([${i}])" id="MyBtn${i}" class="btn btn-danger">remove from  <i onclick="" class="fa fa-shopping-cart w3-margin-right"></i></button>
           </div>
@@ -265,7 +265,7 @@ for (let i = 0; i <myProducts.length; i++){
           <img src="${myProducts[i].IMG}" style="width:100%">
           <p style="text-align: center;">${myProducts[i].AlbumNAME}</p>
           <b id = totalNum>$${myProducts[i].PRICE*myProducts[i].Amount}</b>
-          <input  readonly type="text" value="${myProducts[i].Amount}" id="AmountProduct${i}" class = "w3-right Amount" name="quantity" min="1" max="5"><br></br>
+          <input  type="text" value="${myProducts[i].Amount}" id="AmountProduct${i}" class = "w3-right Amount" name="quantity" min="1" max="5" disabled ><br></br>
           <div class="d-grid gap-2">
           <button onclick="removeFromWhishList([${i}])" id="HeartBtn${i}" class="btn btn-dark CardBtn">Remove from   <i onclick="" class="fa fa-heart w3-margin-right"></i></button>          </div>
         </div>

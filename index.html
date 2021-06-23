@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <link rel="shortcut icon" type="image/png" href="IMG/pageicone.png"/>
 <title>Live It. Rock It.</title>
 <meta charset="UTF-8">
@@ -147,12 +148,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <h2 class="w3-wide">Check out paymate</h2>
       <div class="w3-col s4">
       <label for="Credit-Card-Details">Paymate Details:</label>
-      <input type="text" placeholder="Name of Card owner:" id="Credit-Card-Details"> 
-      <input type="text" placeholder="ID:" id="Credit-Card-Details">       
-      <input type="text" placeholder="Card Number:" id="Credit-Card-Details">
-      <input type="month"placeholder="Card expiration date:" id="EpxDate">
-      <input type="text" placeholder="CVV" maxlength="3" id="CVV"> 
-      <button id="PayBtn" class=" btn btn-danger w3-margin-bottom" onclick="document.getElementById('CheckOut box').style.display='none'">cheack out</button>
+      <form action="">
+      <input type="text" placeholder="Name of Card owner:" id="Credit-Card-Details" required> 
+      <input type="text" name="NumberOnly" placeholder="ID:" id="Credit-Card-Details" required >       
+      <input type="text" name="NumberOnly" placeholder="Card Number:" id="Credit-Card-Details" required>
+      <input type="month"placeholder="Card expiration date:" id="EpxDate" required>
+      <input type="text" name="NumberOnly" placeholder="CVV" maxlength="3" id="CVV" required> 
+      <button id="PayBtn" class=" btn btn-danger w3-margin-bottom">cheack out</button>
+    </form>
     </div>
   </div>
 </div>

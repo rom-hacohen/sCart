@@ -10,9 +10,11 @@ https://www.w3schools.com/w3css/tryw3css_templates_clothing_store.htm
 
 * I used Local Storage to keep the products that added to cart or wishlist after refreshing the browser.
 
-* i used bootstrap button for some of the buttons and W3 icons.
+* I used bootstrap button for some of the buttons and W3 icons.
 
-* i have to say i very much enjoy making this project and i spent alot of time and effert to make it work, i hope you like it same as i do
+* I used jquery function with Regex for the Check out inputs  
+
+* I have to say i very much enjoy making this project and i spent alot of time and effert to make it work, i hope you like it same as i do
 
 
 

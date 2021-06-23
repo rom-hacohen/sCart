@@ -150,7 +150,7 @@ CheckCart()
 function search(){
   displayProducts.innerHTML =""
   for (let i = 0; i <myProducts.length; i++){
-    if(myProducts[i].AlbumNAME == Search.value){
+    if(myProducts[i].AlbumNAME.toLowerCase() == Search.value.toLowerCase()){
     displayProducts.innerHTML =
     `<div>
       <div class="w3-col l3 s6" style="margin-bottom: 5px;">
@@ -318,6 +318,12 @@ if (myProducts[i].WISHLIST == true){
 }
 }
 }
+ // only number for card and id 
+$(function(){
+  $("input[name='NumberOnly']").on('input', function (e) {
+    $(this).val($(this).val().replace(/[^0-9]/g, ''));
+  });
+});
 // Open and close sidebar in phone mode
 function w3_open() {
   document.getElementById("mySidebar").style.display = "block";
